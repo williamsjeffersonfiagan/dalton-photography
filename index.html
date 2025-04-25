@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Photographe | [Votre Nom]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DALTON PHOTOGRAPHY</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Hero -->
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <h1>AKODEGNON A. Marcellin J.</h1>
+                <p>Photographe Professionnel</p>
+                <a href="#portfolio" class="btn">Voir mon travail</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="a-propos" class="about">
+            <div class="container">
+                <h2>À propos de moi</h2>
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="images/moi/IMG_1850.JPG" alt="Photographe">
+                    </div>
+                    <div class="about-text">
+                        <p>Je suis un photographe passionné avec plus de 5 ans d'expérience dans la capture de moments uniques et émouvants. Mon objectif est de créer des images qui racontent une histoire et évoquent des émotions.</p>
+                        <p>Specialisé dans les photos portraits, les photos d’événements comme les mariages, les cérémonies d’intronisation et des photos sportives.</p>
+                        <div class="skills">
+                            <h3>Compétences</h3>
+                            <ul>
+                                <li>Photographie portrait</li>
+                                <li>Photographie de mariage</li>
+                                <li>Retouche photo</li>
+                                <li>Photographie de paysage</li>
+                                <li>Photographie de sport</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Portfolio -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2>Mon Portfolio</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="portrait">Portraits</button>
+                    <button class="filter-btn" data-filter="Eglise">Eglise</button>
+                    <button class="filter-btn" data-filter="paysage">Paysages</button>
+                    <button class="filter-btn" data-filter="nature">Nature</button>
+                </div>
+                <div class="gallery">
+                    <!-- Les images seront ajoutées dynamiquement via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Services -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Mes Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-camera"></i>
+                        <h3>Séance Photo</h3>
+                        <p>Séance photo personnalisée en studio ou en extérieur avec différentes tenues et décors.</p>
+                        <p class="price">À partir de 15000Fcfa</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-ring"></i>
+                        <h3>Mariage</h3>
+                        <p>Couverture complète de votre journée spéciale avec des photos naturelles et posées.</p>
+                        <p class="price">À partir de 15000Fcfa</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-mountain"></i>
+                        <h3>Paysages</h3>
+                        <p>Photographie de paysages naturels ou urbains pour décorer votre espace.</p>
+                        <p class="price">À partir de 3000Fcfa/photo</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-baby"></i>
+                        <h3>Nouveau-nés</h3>
+                        <p>Séance photo douce et délicate pour immortaliser les premiers moments de bébé.</p>
+                        <p class="price">À partir de 10000Fcfa</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Réservation -->
+        <section id="reservation" class="booking">
+            <div class="container">
+                <h2>Réserver une séance</h2>
+                <form id="booking-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="booking-name">Nom complet</label>
+                        <input type="text" id="booking-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-email">Email</label>
+                        <input type="email" id="booking-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-phone">Téléphone</label>
+                        <input type="tel" id="booking-phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-service">Service</label>
+                        <select id="booking-service" name="service" required>
+                            <option value="">Sélectionnez un service</option>
+                            <option value="seance-photo">Séance Photo</option>
+                            <option value="mariage">Mariage</option>
+                            <option value="paysage">Paysages</option>
+                            <option value="nouveau-ne">Nouveau-nés</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-date">Date souhaitée</label>
+                        <input type="date" id="booking-date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-message">Message (détails, demandes spéciales)</label>
+                        <textarea id="booking-message" name="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Envoyer la demande</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contactez-moi</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Coordonnées</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Rue de la Photo, 75000 Paris</p>
+                        <p><i class="fas fa-phone"></i> +228 98 28 01 79</p>
+                        <p><i class="fas fa-envelope"></i> contact@photopro.com</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-500px"></i></a>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Nom</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Sujet</label>
+                            <input type="text" id="contact-subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>NilDalton</h3>
+                    <p>Photographe professionnel spécialisé dans les portraits, mariages et paysages.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#a-propos">À propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Séance Photo</a></li>
+                        <li><a href="#services">Mariage</a></li>
+                        <li><a href="#services">Paysages</a></li>
+                        <li><a href="#services">Nouveau-nés</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Abonnez-vous pour recevoir mes dernières actualités.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 filsdelhom. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="image-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div class="caption" id="modal-caption"></div>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
