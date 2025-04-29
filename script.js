@@ -18,18 +18,18 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Images de portfolio
     const galleryItems = [
-        { img: 'images/portrait/IMG_0741.jpg', category: 'portrait', title: 'Portrait masculin' },
-        { img: 'images/portrait/IMG_0751.jpg', category: 'portrait', title: 'Portrait' },
-        { img: 'images/miss/IMG_9426.jpg', category: 'miss', title: 'evenement' },
-        { img: 'images/eglise/IMG_1438 - Copie.jpg', category: 'Eglise', title: 'culte' },
-        { img: 'images/eglise/IMG_1521.jpg', category: 'Eglise', title: 'culte' },
-        { img: 'images/eglise/IMG_1542.jpg', category: 'Eglise', title: 'culte' },
-        { img: 'images/football/IMG_3185-109.JPG', category: 'paysage', title: 'football' },
-        { img: 'images/football/IMG_3198-122.JPG', category: 'paysage', title: 'football' },
-        { img: 'images/football/IMG_3205-129.JPG', category: 'paysage', title: 'football' },
-        { img: 'images/nature/IMG_8714.JPG', category: 'nature', title: 'Séance nature' },
-        { img: 'images/nature/IMG_8718.JPG', category: 'nature', title: 'nature' },
-        { img: 'images/nature/IMG_8719.JPG', category: 'nature', title: 'nature' }
+        { img: 'images/portrait/IMG_0741.webp', category: 'portrait', title: 'Portrait masculin' },
+        { img: 'images/portrait/IMG_0751.webp', category: 'portrait', title: 'Portrait' },
+        { img: 'images/miss/IMG_9580.webp', category: 'miss', title: 'evenement' },
+        { img: 'images/eglise/IMG_1416 - Copie (2).webp', category: 'Eglise', title: 'culte' },
+        { img: 'images/eglise/IMG_1438 - Copie.webp', category: 'Eglise', title: 'culte' },
+        { img: 'images/eglise/IMG_2099.webp', category: 'Eglise', title: 'culte' },
+        { img: 'images/football/IMG_3185-109.webp', category: 'paysage', title: 'football' },
+        { img: 'images/football/IMG_3198-122.webp', category: 'paysage', title: 'football' },
+        { img: 'images/football/IMG_3205-129.webp', category: 'paysage', title: 'football' },
+        { img: 'images/nature/IMG_8714.webp', category: 'nature', title: 'Séance nature' },
+        { img: 'images/nature/IMG_8718.webp', category: 'nature', title: 'nature' },
+        { img: 'images/nature/IMG_8719 (1).webp', category: 'nature', title: 'nature' }
     ];
     
     const gallery = document.querySelector('.gallery');
